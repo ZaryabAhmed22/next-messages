@@ -8,7 +8,7 @@ export default function NewMessagePage() {
     "use server";
 
     const message = formData.get("message");
-    // addMessage(message);
+    addMessage(message);
 
     // managing the full route chache. This is the best way when you want to refetch the data based on some action
     revalidatePath("/messages", "layout");
